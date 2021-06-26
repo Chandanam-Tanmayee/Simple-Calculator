@@ -1,0 +1,81 @@
+import math
+print("\t\t\t Welcome to Calculater")
+def sum(a,b):
+    a+=b
+    return a
+    
+def subtraction(a,b):
+    if a>b:
+        a-=b
+        return a
+    else:
+        b-=a
+        return b
+        
+def multiplication(a,b):
+    a*=b
+    return a
+    
+def division(a,b):
+    
+    q=a/b
+    r=a%b
+    print("The quotient is : %s" %q)
+    print("The remainder is : %s" %r)
+    
+def sqrt(a):
+    x=math.sqrt(a)
+    return x
+
+while(True):
+    print("\nEnter th operation you want to perform")
+    print("\n\n 1.ADDITION")
+    print("\n\n 2.SUBTRACTION")
+    print("\n\n 3.MULTIPLICATION")
+    print("\n\n 4.DIVISION")
+    print("\n\n 5.SQUARE ROOT")
+    print("\n\n 6.EXIT")
+    
+    choose=int(input("->"))
+    
+    if choose==1:
+        print("\n Enter the two numbers:")
+        n=int(input("->"))
+        m=int(input("->"))
+        s=sum(n,m)
+        print("The sum is : %s" %s)
+    elif choose==2:
+        print("\n Enter two numbers:")
+        n=int(input("->"))
+        m=int(input("->"))
+        i=subtraction(n,m)
+        print("\nThe Subtraction is: %s" %i)
+        
+    elif choose==3:
+        print("\n Enter two numbers:")
+        n=int(input("->"))
+        
+        m=int(input("->"))
+        j=multiplication(n,m)
+        print("\n The product is : %s " %j)
+        
+    elif choose==4:
+        print("\n Enter two numbers:")
+        n=int(input("->"))
+        m=int(input("->"))
+        division(n,m)
+        
+    elif choose==5:
+        print("\n Enter a number:")
+        n=int(input("->"))
+        r=sqrt(n)
+        print("\nThe square root is :%s" %r)
+        
+    else:
+        print("\n EXIT")
+        break
+        
+        
+        
+        
+    
